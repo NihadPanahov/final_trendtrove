@@ -1,0 +1,17 @@
+.navbar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000000; /* İstediğiniz renge ayarlayın */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar.scrolled::after {
+    transform: scaleX(1);
+  }
+  

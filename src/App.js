@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Home from "./pages/Home";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Detail from "./pages/Detail";
+import Cart from "./pages/Cart";
+import Footer from "./components/footer/Footer";
+import Aboutus from "../src/pages/Aboutus";
+import Contactus from "./pages/Contactus";
+import Blog from "./pages/Blog";
+import BackToTopButton from "./components/BackToTopButton";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import BlogPage from './components/BlogPage';
+import NavbarMobile from "./components/navbar/NavbarMobile";
+import Navbarr from "./components/Navbarr";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <NavbarMobile /> 
+        <Navbarr/>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path="/blog/:id" element={<BlogPage />} />
+          <Route path='/products/:id' element={<Detail />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/aboutus' element={<Aboutus />} />
+          <Route path='/contactus' element={<Contactus />} />
+          <Route path='/blog' element={<Blog />} />
+        </Routes>
+        <Footer />
+        <BackToTopButton />
+        <ToastContainer />
+      </Router>
     </div>
   );
 }
