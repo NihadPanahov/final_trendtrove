@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/final_trendtrove/static/css/main.526215eb.css",
+    "main.js": "/final_trendtrove/static/js/main.a4447e49.js",
+    "static/media/jwlry.jpg": "/final_trendtrove/static/media/jwlry.c8c89632f2a57b1fc3cd.jpg",
+    "static/media/shirt.jpg": "/final_trendtrove/static/media/shirt.5f1200901d8c82c964ff.jpg",
+    "static/media/playstation-5.webp": "/final_trendtrove/static/media/playstation-5.f37bb0570ab3398e6b36.webp",
+    "static/media/discount gif.gif": "/final_trendtrove/static/media/discount gif.ca296fa5a95b0d1e6aef.gif",
+    "static/media/globalicon.png": "/final_trendtrove/static/media/globalicon.2f2e4b9bf8a69849b1ac.png",
+    "static/media/cs2.png": "/final_trendtrove/static/media/cs2.623c817d4b565b9ac423.png",
+    "static/media/productselection.png": "/final_trendtrove/static/media/productselection.40ac5820aeb613027a6b.png",
+    "static/media/English.png": "/final_trendtrove/static/media/English.b9a2ba74e5f8a55977e7.png",
+    "static/media/secureshopping.png": "/final_trendtrove/static/media/secureshopping.62aca21de737872c8d2c.png",
+    "static/media/cargo3.png": "/final_trendtrove/static/media/cargo3.530a85be5a8bdabab92b.png",
+    "static/media/slick.svg": "/final_trendtrove/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/final_trendtrove/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/final_trendtrove/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/final_trendtrove/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/light-mode-svgrepo-com.svg": "/final_trendtrove/static/media/light-mode-svgrepo-com.ed8c1250555b7c324e0e240f51527407.svg",
+    "static/media/letter-office-letter-svgrepo-com (1).svg": "/final_trendtrove/static/media/letter-office-letter-svgrepo-com (1).fb073ebb69423cd2f6b43e891d1fa67a.svg",
+    "static/media/letter-office-letter-svgrepo-com-DARK.svg": "/final_trendtrove/static/media/letter-office-letter-svgrepo-com-DARK.572ab352cc43fd3193d76e3cb60a1eaa.svg",
+    "static/media/dark-mode-night-moon-svgrepo-com.svg": "/final_trendtrove/static/media/dark-mode-night-moon-svgrepo-com.7c5b5f7ebeb425fc471c244241dc63a6.svg",
+    "static/media/chat-conversation-svgrepo-com-DARK.svg": "/final_trendtrove/static/media/chat-conversation-svgrepo-com-DARK.54f5b1811bd896fafd252d7d224b8016.svg",
+    "static/media/chat-conversation-svgrepo-com-LIGHT.svg": "/final_trendtrove/static/media/chat-conversation-svgrepo-com-LIGHT.724dbaeb3918574be44fa2074a1ee734.svg",
+    "static/media/call-svgrepo-com-DARK.svg": "/final_trendtrove/static/media/call-svgrepo-com-DARK.be3f786229827454c749dff6374f1dce.svg",
+    "static/media/call-svgrepo-com-LIGHT.svg": "/final_trendtrove/static/media/call-svgrepo-com-LIGHT.9cb061e463f17fc765151721d6ba9df0.svg",
+    "index.html": "/final_trendtrove/index.html",
+    "main.526215eb.css.map": "/final_trendtrove/static/css/main.526215eb.css.map",
+    "main.a4447e49.js.map": "/final_trendtrove/static/js/main.a4447e49.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.526215eb.css",
+    "static/js/main.a4447e49.js"
+  ]
+}
