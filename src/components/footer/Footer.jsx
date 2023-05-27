@@ -1,7 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import logo from "../../img/LogoMain2.png"
 const Footer = () => {
 
     const [t, i18n] = useTranslation("global");
@@ -10,14 +11,16 @@ const Footer = () => {
 
     return (
         <footer className='bg-gray-600  '  >
-            <hr className='h-2 bg-slate-50' />
-            <hr className='h-2 bg-gray-400' />
-            <hr className='h-2 bg-gray-500' />
-            <hr className='h-2 bg-gray-600' />
+            <hr className='h-2 bg-gray-100 border-gray-100' />
+            <hr className='h-2 bg-gray-200 border-gray-200' />
+            <hr className='h-2 bg-gray-300 border-gray-300' />
+            <hr className='h-2 bg-gray-400 border-gray-400' />
+            <hr className='h-2 bg-gray-500 border-gray-500' />
+            <hr className='h-2 bg-gray-600 border-gray-600' />
 
             <div className='container  flex justify-center gap-5  max-md:flex-col    text-white py-10'>
                 <div className='md:w-full lg:w-7/12'>
-                    <p className='font-bold text-2xl mb-[20px]'>LOGO</p>
+                    <p className='font-bold text-2xl mb-[20px]'><img src={logo} alt="" /></p>
                     <p>{t("belowlogo")}</p>
                 </div>
                 <div className=''>
