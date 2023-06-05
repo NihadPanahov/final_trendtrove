@@ -79,8 +79,8 @@ export default function NavbarMobile() {
           )}
         </div>
         <div className="text-white text-2xl">
-          {/* Language selector */}
-          {/* Theme toggle */}
+          {/*  */}
+          {/*  */}
         </div>
       </div>
       {isMobileMenuOpen && (

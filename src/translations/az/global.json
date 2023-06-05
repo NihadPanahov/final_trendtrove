@@ -18,7 +18,7 @@
     "bpinfo2": "Beynəlxalq: 1-606-274-0709",
     "luyt": "FİKİRLƏRİNİZİ BİZİMLƏ PAYLAŞIN",
     "luyttext": "Sadəcə suallarınızı göndərin və biz sizə lazım olan köməyi edəcəyik.",
-    "livechat": "CANLI ÜNSİYYƏT",
+    "livechat": "CANLI SÖHBƏT",
     "lctext": "Daxili komandamızın üzvü ilə söhbət edin.",
     "belowlogo": "Biz yüksək keyfiyyətli, müxtəlif məhsul seçimimiz və xidmətlərimizlə unikal alış-veriş təcrübəsi təqdim etməkdən məmnunuq.",
     "tc": "Ən yaxşı kateqoriyalar",
@@ -55,5 +55,14 @@
     "atc": "Səbətə əlavə et",
     "blgs": "Bloqlar",
     "noblog": "Bloq məqaləsi tapılmadı",
-    "note": "*Qeyd: Cari ümumi məbləği görmək istəyirsinizsə, zəhmət olmasa bu səhifəni yeniləyin."
+    "note": "*Qeyd: Cari ümumi məbləği görmək istəyirsinizsə, zəhmət olmasa bu səhifəni yeniləyin.",
+    "fav": "Sevimli Məhsullarınız",
+    "rmv": "Silin",
+    "favdisplay": "Sevimli məhsullarınız burada göstəriləcək",
+    "liveechat": "Canlı Söhbət",
+    "onlinec": "Online konsultasiyaya xoş gəldiniz",
+    "typeyourmessage": "Mesajınızı yazın...",
+    "send": "Göndərin",
+    "clearchat": "Çatı silin",
+    "ourteam": "Komandamız"
 }

@@ -22,8 +22,8 @@ function App() {
   return (
     <div>
       <Router>
-        <NavbarMobile /> 
-        <Navbarr/>
+        <NavbarMobile />
+        <Navbarr />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path="/blog/:id" element={<BlogPage />} />

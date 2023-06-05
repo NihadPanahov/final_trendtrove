@@ -17,7 +17,7 @@ const Clock = () => {
   let interval;
 
   const countDown = () => {
-    const destination = new Date('May 30, 2023').getTime();
+    const destination = new Date('June 06, 2023').getTime();
     interval = setInterval(() => {
       const now = new Date().getTime();
       const difference = destination - now;
@@ -59,22 +59,22 @@ const Clock = () => {
       <div className={containerClass}>
         <div className="flex flex-col md:flex-row justify-center items-center md:pl-20 sm:pl-0">
           <div className="text-center md:mr-8">
-            <h1 className="lg:text-6xl text-2xl  font-bold mb-4">{days}</h1>
+            <h1 className="lg:text-6xl text-5xl  font-bold mb-4">{days}</h1>
             <p className={textClass}>{t('days')}</p>
           </div>
-          <span className="text-6xl font-bold mx-4">:</span>
+          <span className="lg:text-6xl text-2xl font-bold mx-4">:</span>
           <div className="text-center md:mr-8">
-            <h1 className="lg:text-6xl text-2xl font-bold mb-4">{hours}</h1>
+            <h1 className="lg:text-6xl text-5xl font-bold mb-4">{hours}</h1>
             <p className={textClass}>{t('hours')}</p>
           </div>
-          <span className="text-6xl font-bold mx-4">:</span>
+          <span className="lg:text-6xl text-2xl font-bold mx-4">:</span>
           <div className="text-center md:mr-8">
-            <h1 className="lg:text-6xl text-2xl font-bold mb-4">{minutes}</h1>
+            <h1 className="lg:text-6xl text-5xl font-bold mb-4">{minutes}</h1>
             <p className={textClass}>{t('minutes')}</p>
           </div>
           <span className="lg:text-6xl text-2xl font-bold mx-4">:</span>
           <div className="text-center">
-            <h1 className="lg:text-6xl text-2xl  font-bold mb-4">{seconds}</h1>
+            <h1 className="lg:text-6xl text-5xl  font-bold mb-4">{seconds}</h1>
             <p className={textClass}>{t('seconds')}</p>
           </div>
         </div>

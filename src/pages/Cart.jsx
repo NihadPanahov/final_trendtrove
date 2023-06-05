@@ -32,7 +32,7 @@ const Cart = () => {
                             </div>
                         ))}
                         <div className="flex items-center justify-end text-2xl font-light mt-16">
-                            <span className="mr-[10%] sm:text-[20px] text-[15px]"><i>{t("note")}</i> </span>
+                            {/* <span className="mr-[10%] sm:text-[20px] text-[15px]"><i>{t("note")}</i> </span> */}
                             <div className='sm:text-2xl text-[17px]'>{t('ta')} :{' '}</div>
 
                             <span className="font-bold sm:text-3xl text-sm ml-2 underline">{totalAmount} $</span>

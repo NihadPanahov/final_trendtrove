@@ -50,7 +50,7 @@ const Products = ({ category, sort }) => {
     <div>
       <div>
         <input
-          className="border-double hover:border-dotted rounded-lg shadow opacity-50 text-gray-900 drop-shadow outline-0 shadow-gray-100 border-gray p-2 m-5 mt-1 border-4"
+          className="border-double hover:border-dotted rounded-lg shadow opacity-50 text-gray-900 drop-shadow outline-0 shadow-gray-100 border-gray p-2 m-5 mt-1 border-4 lg:ml-[10px] md:ml-[34%] lg:p-2 md:my-[10px]"
           type="text"
           value={searchQuery}
           onChange={(event) => setSearchQuery(event.target.value)}
@@ -67,10 +67,12 @@ const Products = ({ category, sort }) => {
                 sort === 'inc' ? a.price - b.price : sort === 'dec' ? b.price - a.price : null
               )
               .map((product, i) => (
-                 <div >  <Product key={i} product={product} /> </div>
+                 <div className='my-[10px] lg:ml-0 md:ml-[16%]' >  <Product key={i} product={product} /> </div>
               ))}
           </div>
-          <ReactPaginate
+
+          <div className='lg:mr-0 md:mr-[35%]'>
+            <ReactPaginate
             className="paginate"
             breakLabel="..."
             nextLabel=">"
@@ -80,6 +82,8 @@ const Products = ({ category, sort }) => {
             previousLabel="<"
             renderOnZeroPageCount={null}
           />
+          </div>
+          
         </>
       )}
     </div>

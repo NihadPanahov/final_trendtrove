@@ -1,5 +1,5 @@
 {
-    "aboutus": "About us",
+    "aboutus": "About Us",
     "welcome": "Welcome to our e-commerce site! We are a leading company specializing in selling high-quality products to customers around the world. Our mission is to provide an exceptional online shopping experience, offering a wide range of products that meet the needs and preferences of our valued customers.",
     "ps": "Product Selection",
     "pst": "At our e-commerce site, we take pride in curating a diverse selection of products to cater to different tastes and interests. From electronics and fashion to home decor and beauty, we strive to offer an extensive range of products that are both trendy and timeless. Our team works diligently to source products from reputable suppliers, ensuring that every item meets our strict quality standards.",
@@ -55,5 +55,14 @@
     "atc": "Add to cart",
     "blgs": "Blogs",
     "noblog": "Blog article not found",
-    "note": "*Note: If you want to see the current total amount, please refresh this page."
+    "note": "*Note: If you want to see the current total amount, please refresh this page.",
+    "fav": "Your Favorite Products",
+    "rmv": "Remove",
+    "favdisplay": "Your favorite products will display here",
+    "liveechat": "Live Chat",
+    "onlinec": "Welcome to the online consultation",
+    "typeyourmessage": "Type your message...",
+    "send": "Send",
+    "clearchat": "Clear Chat",
+    "ourteam": "Our Team"
 }

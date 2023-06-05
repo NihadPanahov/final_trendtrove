@@ -42,13 +42,11 @@ const DetailComp = ({ productDetail }) => {
 
   const theme = useSelector((state) => state.theme.mode);
 
-  const containerClass = `flex gap-20 py-[100px] items-center ${
-    theme === 'light' ? 'bg-slate-50' : 'bg-gray-700 text-white'
-  }`;
+  const containerClass = `flex gap-20 py-[100px] items-center ${theme === 'light' ? 'bg-slate-50' : 'bg-gray-700 text-white'
+    }`;
 
-  const containerrClass = `w-12 text-center text-6xl font-bold ${
-    theme === 'light' ? 'text-black bg-slate-50' : 'text-white bg-gray-700'
-  }`;
+  const containerrClass = `w-12 text-center text-6xl font-bold ${theme === 'light' ? 'text-black bg-slate-50' : 'text-white bg-gray-700'
+    }`;
 
   const textClass = theme === 'light' ? 'text-black' : 'text-gray-400';
 
@@ -56,17 +54,17 @@ const DetailComp = ({ productDetail }) => {
     <div className={containerClass}>
       <div className="container flex flex-col md:flex-row gap-20">
         <div className="md:w-[400px] md:h-[400px]">
-          <img className="w-full h-full object-contain" src={productDetail?.image} alt="" />
+          <img className="lg:w-full md:w-[200%] h-full object-contain" src={productDetail?.image} alt="" />
         </div>
         <div className="">
-          <div className={`text-4xl font-bold ${textClass}`}>{productDetail?.title}</div>
-          <div className={`my-2 text-2xl ${textClass}`}>{productDetail?.description}</div>
-          <div className={`my-2 text-xl ${textClass} flex`}>
+          <div className={`lg:text-4xl md:text-2xl sm:text-xl font-bold ${textClass}`}>{productDetail?.title}</div>
+          <div className={`my-2 lg:text-2xl md:text-sm  ${textClass}`}>{productDetail?.description}</div>
+          <div className={`my-2 lg:text-xl md:text-md ${textClass} flex`}>
             <AiFillStar />
             {t('rating')}
             <AiFillStar />: {productDetail?.rating?.rate}
           </div>
-          <div className={`my-2 text-xl ${textClass}`}>
+          <div className={`my-2 text-xl md:text-md ${textClass}`}>
             {t('count')}: {productDetail?.rating?.count}
           </div>
           <div className="text-5xl font-bold">
@@ -75,27 +73,24 @@ const DetailComp = ({ productDetail }) => {
           <div className="flex items-center gap-5 my-4">
             <div
               onClick={decrement}
-              className={`text-5xl cursor-pointer rounded-full bg-gray-400 p-1 hover:text-white hover:bg-black transition duration-300 ease-in-out hover:scale-90 border-none btn shadow-[0_9px_0_gray] hover:shadow-[0_4px_0px_gray] ${textClass} ${
-                theme === 'light' ? 'bg-white' : 'bg-gray-700'
-              } ease-out hover:translate-y-1 transition-all rounded`}
+              className={`text-5xl cursor-pointer rounded-full bg-gray-400 p-1 hover:text-white hover:bg-black transition duration-300 ease-in-out hover:scale-90 border-none btn shadow-[0_9px_0_gray] hover:shadow-[0_4px_0px_gray] ${textClass} ${theme === 'light' ? 'bg-white' : 'bg-gray-700'
+                } ease-out hover:translate-y-1 transition-all rounded`}
             >
               -
             </div>
-            <input className={containerrClass} type="text" value={quantity} />
+            <input className={`${theme === 'light' ? ' bg-slate-50' : ' bg-gray-700'} text-${theme === 'light' ? 'black ' : 'white '} w-12 text-center text-6xl font-bold `} type="text" value={quantity} />
             <div
               onClick={increment}
-              className={`text-4xl cursor-pointer rounded-full bg-gray-400 p-1 hover:text-white hover:bg-black transition duration-300 ease-in-out hover:scale-90 border-none btn shadow-[0_9px_0_gray] hover:shadow-[0_4px_0px_gray] ${textClass} ${
-                theme === 'light' ? 'bg-white' : 'bg-gray-700'
-              } ease-out hover:translate-y-1 transition-all rounded`}
+              className={`text-4xl cursor-pointer rounded-full bg-gray-400 p-1 hover:text-white hover:bg-black transition duration-300 ease-in-out hover:scale-90 border-none btn shadow-[0_9px_0_gray] hover:shadow-[0_4px_0px_gray] ${textClass} ${theme === 'light' ? 'bg-white' : 'bg-gray-700'
+                } ease-out hover:translate-y-1 transition-all rounded`}
             >
               +
             </div>
           </div>
           <div
             onClick={handleBothClicks}
-            className={`my-4 border w-[200px] text-2xl rounded-md cursor-pointer h-16 flex items-center justify-center hover:text-white hover:bg-black transition duration-300 ease-in-out hover:scale-90 border-none btn shadow-[0_9px_0_gray] hover:shadow-[0_4px_0px_gray] ${textClass} ${
-              theme === 'light' ? 'bg-white' : 'bg-gray-700'
-            } ease-out hover:translate-y-1 transition-all rounded`}
+            className={`my-4 border w-[200px] text-2xl rounded-md cursor-pointer h-16 flex items-center justify-center hover:text-white hover:bg-black transition duration-300 ease-in-out hover:scale-90 border-none btn shadow-[0_9px_0_gray] hover:shadow-[0_4px_0px_gray] ${textClass} ${theme === 'light' ? 'bg-white' : 'bg-gray-700'
+              } ease-out hover:translate-y-1 transition-all rounded`}
           >
             {t('atc')}
           </div>

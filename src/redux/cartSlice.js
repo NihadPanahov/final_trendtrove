@@ -48,20 +48,27 @@ const cartSlice = createSlice({
             }
         },
         removeFromCart: (state, action) => {
-            const tempCart = state.carts.filter(item => item.id !== action.payload)
-            state.carts = tempCart
-            storeInLocalStorage(state.carts)
-        },
+            const removedItemId = action.payload;
+            const removedItem = state.carts.find(item => item.id === removedItemId);
+          
+            if (removedItem) {
+              const updatedCart = state.carts.filter(item => item.id !== removedItemId);
+              state.carts = updatedCart;
+              state.totalAmount -= removedItem.price * removedItem.quantity;
+              state.itemCount = state.carts.length;
+              storeInLocalStorage(state.carts);
+            }
+          },
         clearCart: (state) => {
             state.carts = []
             storeInLocalStorage(state.carts)
         },
-        getCartTotal : (state) =>{
+        getCartTotal: (state) => {
             state.totalAmount = state.carts.reduce((cartTotal, cartItem) => {
-                return cartTotal += cartItem.price * cartItem.quantity
-            }, 0)
-            state.itemCount = state.carts.lenght
-        }
+              return cartTotal + cartItem.price * cartItem.quantity;
+            }, 0);
+            state.itemCount = state.carts.length;
+          }
     }
 })
 

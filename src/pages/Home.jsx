@@ -11,6 +11,14 @@ import { useTranslation } from 'react-i18next';
 import { setBlogs } from '../redux/blogSlice';
 import jsonData from '../api/blogData.json';
 import BlogCard from '../components/BlogCard';
+import FavoriteProducts from '../FavoriteProducts';
+
+import fav1 from "../img/fav1.jpg";
+import fav2 from "../img/fav2.webp";
+import fav3 from "../img/fav3.webp";
+import fav4 from "../img/fav4.jpg";
+import blogbgpic from "../img/blogbgpic.webp";
+
 
 const Home = () => {
 
@@ -50,9 +58,18 @@ const Home = () => {
           </div>
         </div>
         <Clock />
-        <hr />
-        <h1 className='flex text-center justify-center align-center text-6xl font-bold my-[100px] '>{t("blgs")}</h1>
-        <hr />
+        {/* <hr /> */}
+
+        <div className=' bg-custom-bg h-full py-[200px] my-20 rounded-2xl' style={{
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+        }}>
+          <h1 className='flex text-center justify-center align-center text-6xl font-bold  '>{t("blgs")}</h1>
+        </div>
+
+        {/* <hr /> */}
 
         <div className="home-page">
           {blogs.map((blog) => (
@@ -62,6 +79,25 @@ const Home = () => {
 
 
       </div>
+
+      <div className='flex my-20 justify-center'>
+        <div className='w-[40%] ' style={{ clipPath: 'polygon(100% 0, 58% 17%, 74% 100%, 30% 100%, 43% 17%, 0% 0%)' }}>
+          <img src={fav3} alt="" />
+        </div>
+        <div className='w-[40%] mt-20 ' style={{ clipPath: 'polygon(100% 0, 58% 17%, 74% 100%, 30% 100%, 43% 17%, 0% 0%)' }}>
+          <img src={fav4} alt="" />
+        </div>
+        <div className='w-[40%] ' style={{ clipPath: 'polygon(100% 0, 58% 17%, 74% 100%, 30% 100%, 43% 17%, 0% 0%)' }}>
+          <img src={fav2} alt="" />
+        </div>
+        <div className='w-[40%] mt-20 ' style={{ clipPath: 'polygon(100% 0, 58% 17%, 74% 100%, 30% 100%, 43% 17%, 0% 0%)' }}>
+          <img src={fav1} alt="" />
+        </div>
+      </div>
+
+
+
+      <FavoriteProducts />
     </div>
   );
 };

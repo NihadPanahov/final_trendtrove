@@ -15,6 +15,7 @@ const Sorting = ({ setSort }) => {
 
   return (
     <div className={selecttClass}>
+      <div className='text-center lg:mr-0 md:m-auto'>
       <select
         onChange={(e) => setSort(e.target.value)}
         className={selectClass}
@@ -27,6 +28,8 @@ const Sorting = ({ setSort }) => {
         <option value="inc">{t('i')}</option>
         <option value="dec">{t('d')}</option>
       </select>
+      </div>
+      
     </div>
   );
 };

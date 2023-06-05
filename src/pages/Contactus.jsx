@@ -13,6 +13,8 @@ import phoneeDark from "../assets/icons/call-svgrepo-com-DARK.svg";
 
 import chatSvg from "../assets/icons/chat-conversation-svgrepo-com-LIGHT.svg";
 import chatDark from "../assets/icons/chat-conversation-svgrepo-com-DARK.svg";
+import ChatWidget from '../components/ChatWidget';
+import LiveChat from '../LiveChat';
 
 
 const ContactUs = () => {
@@ -33,7 +35,7 @@ const ContactUs = () => {
 
       <div className={`bg-${theme === 'light' ? 'slate-50' : 'gray-700'} text-${theme === 'light' ? 'black' : 'white'} `}>
         <div>
-          <h1 className='text-6xl flex justify-center font-bold mt-[0.1px] py-14'>{t("contactuss")}</h1>
+          <h1 className='text-6xl flex justify-center font-bold  py-14'>{t("contactuss")}</h1>
         </div>
 
         <div className='flex flex-wrap justify-center container pb-20'>
@@ -54,6 +56,9 @@ const ContactUs = () => {
             <p>{t("lctext")}</p>
           </div>
         </div>
+        <LiveChat/>
+
+        {/* <ChatWidget/> */}
       </div>
     </>
   );

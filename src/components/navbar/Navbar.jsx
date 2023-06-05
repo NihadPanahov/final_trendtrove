@@ -92,7 +92,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Responsive Navbar Toggle Button */}
+        {/* */}
         <button
           className="md:hidden block absolute top-[50%] right-4 transform -translate-y-1/2 text-blue-700"
           onClick={handleNavbarToggle}
@@ -100,10 +100,10 @@ const Navbar = () => {
           <BiSearch className="text-gray-500" size={28} />
         </button>
 
-        {/* Responsive Navbar */}
+        {/*  */}
         {isNavbarOpen && (
           <div className="md:hidden absolute top-[100px] left-0 right-0 bg-gray-800 text-white py-2 px-4">
-            {/* Navbar Items */}
+            {/*  */}
             <div className="flex items-center justify-between">
               <div>Navbar Item 1</div>
               <div>Navbar Item 2</div>

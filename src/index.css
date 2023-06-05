@@ -3,21 +3,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     font-family: 'Nunito', sans-serif;
 }
-.container{
+
+.container {
     max-width: 1200px;
-    margin:  0 auto;
+    margin: 0 auto;
     padding: 0 15px;
 }
 
-.paginate{
+.paginate {
     display: flex;
     align-items: center;
     justify-content: end;
 }
-.paginate li{
+
+.paginate li {
     width: 30px;
     height: 30px;
     border: 1px solid black;
@@ -25,4 +27,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+input[type="text"] {
+    color: black;
+}
+
+.slick-prev:before,
+.slick-next:before {
+   display:none;
 }

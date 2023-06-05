@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import { useTranslation } from 'react-i18next';
 
 const NavbarMiddle = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Mobil menü durumunu takip etmek için state ekledik
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); 
 
   const [t, i18n] = useTranslation("global");
   const navigate = useNavigate();
@@ -48,7 +48,7 @@ const NavbarMiddle = () => {
           <NavLink to="/blog" className={(navClass) => navClass.isActive ? "text-gray-300 font-bold border-b-2 border-gray-200" : "text-lg"}> <li className=' hover:text-gray-600 hover:font-bold'>{t("blog")}</li></NavLink>
           <NavLink onClick={notifyyy} to="/contactus" className={(navClass) => navClass.isActive ? "text-gray-400 font-bold border-b-2 border-gray-200" : "text-lg"}> <li className=' hover:text-gray-600 hover:font-bold'>{t("contactus")}</li></NavLink>
         </ul>
-        {/* Mobil menü toogle butonu */}
+        {/* */}
         <div className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
           <div className="mobile-menu-icon"></div>
         </div>

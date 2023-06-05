@@ -3,8 +3,8 @@ import categorySlice from './categorySlice'
 import productSlice from './productSlice'
 import cartSlice from './cartSlice'
 import blogReducer from './blogSlice';
-
-
+import favoriteReducer from './favoriteSlice';
+import teamReducer from './teamSlice';
 
 
 const themeSlice = createSlice({
@@ -35,6 +35,8 @@ export const store = configureStore({
     carts: cartSlice,
     blog: blogReducer,
     theme: themeSlice.reducer,
+    favorite: favoriteReducer,
+    team: teamReducer,
   },
   middleware: (getDefaultMiddleware) =>
   getDefaultMiddleware().concat((store) => (next) => (action) => {
